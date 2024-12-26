@@ -1,0 +1,11 @@
+.container-min-max {
+  display: grid;
+  gap: 20px;
+  /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+
+  grid-template-columns: 1fr minmax(200px, 300px) 2fr;
+}
+
+.min-max-item {
+  background-color: blueviolet;
+}

@@ -1,0 +1,22 @@
+/** auto-fit auto-fill  */
+
+.container-fill {
+  display: grid;
+  /** auto-fill _заповни контейнер максимально, але ширина колонки має юути 150px  */
+  /*! auto-fill відображає всі колонки на екрані, навіть, ті які не використовуються  */
+
+  /* grid-template-columns: repeat(auto-fill, 150px); */
+
+  /** auto-fit */
+  /*! auto-fit відображає лише ті колонки, які використовуються  */
+
+  grid-template-columns: repeat(auto-fit, 200px);
+
+  background-color: #ccc;
+}
+
+.item {
+  font-size: 40px;
+  text-align: center;
+  background-color: blueviolet;
+}

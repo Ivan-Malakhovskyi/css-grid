@@ -1,0 +1,41 @@
+.container-areas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  gap: 20px;
+  grid-template-areas:
+    "h h h h"
+    "m m . s"
+    "f f f f";
+}
+
+.grid-header {
+  grid-area: h;
+}
+
+.grid-main {
+  grid-area: m;
+}
+
+.grid-aside {
+  grid-area: s;
+}
+
+.grid-footer {
+  grid-area: f;
+}
+
+.grid {
+  text-align: center;
+  color: #000;
+  background-color: orange;
+}
+
+@media (max-width: 767px) {
+  .container-areas {
+    grid-template-areas:
+      "s h h h"
+      "s m m m"
+      "s f f f";
+  }
+}

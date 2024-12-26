@@ -1,0 +1,22 @@
+.container-nested {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fit, 200px);
+  gap: 20px;
+}
+
+.nested-item {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+  border: 1px solid blueviolet;
+  padding: 10px;
+  background-color: yellow;
+}
+
+h2,
+p {
+  font-size: 30px;
+}

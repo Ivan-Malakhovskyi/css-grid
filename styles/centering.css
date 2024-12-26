@@ -1,0 +1,19 @@
+.container-center {
+  display: grid;
+  grid-template-columns: repeat(4, 150px);
+  grid-template-rows: repeat(3, 150px);
+  height: 500px;
+  /** Default value justify and align  */
+  /* justify-items: stretch; */
+  /* align-items: stretch;f */
+  /* justify-content: space-evenly; */
+  /* align-content: space-evenly; */
+  font-size: 30px;
+  border: 1px solid #000;
+}
+
+.grid-item-centered-4 {
+  /** Впливає точково на елемент  */
+  justify-self: center;
+  align-self: end;
+}
